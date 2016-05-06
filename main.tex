@@ -1,0 +1,46 @@
+\documentclass[11pt,twoside,openright]{report}
+\usepackage{projectstyles}
+
+
+\begin{document}
+
+% The front page
+\include{frontpage}
+
+% We should use roman numbers for the pages listed before the main body of the report
+\pagenumbering{Roman}
+
+\include{chapters/abstract/abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\listofalgorithms
+
+% Pad the rest of the page with space, and move to the next page
+\vfill
+\pagebreak
+
+% Switch back to arabic numbering for the main body of the report
+\pagenumbering{arabic} 
+
+% Include the chapters
+\include{chapters/chapter1/chapter1}
+\include{chapters/chapter2/chapter2}
+\include{chapters/chapter3/chapter3}
+\include{chapters/chapter4/chapter4}
+\include{chapters/chapter5/chapter5}
+\include{chapters/chapter6/chapter6}
+\include{chapters/chapter7/chapter7}
+
+\begin{appendices}
+\appendix
+\include{chapters/xappendices/result_tables}
+\include{chapters/xappendices/stagnation_tables}
+\end{appendices}
+
+
+% Print the literature references. This will only print the references in use
+\printbibliography
+
+\end{document}

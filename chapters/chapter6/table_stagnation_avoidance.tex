@@ -1,0 +1,50 @@
+\begin{sidewaystable}[p]
+   \tiny
+   \caption[Stagnation avoidance efficiency]{A comparison of how well the stagnation avoidance strategies coped with MCFP instances where the basic ACO algorithm stagnated. The table decipt the average cost of solutions from 100 runs with optimal parameter configuration. The algorithms was allowed to generate at most $24000$ solutions. The columns show the average cost, the standard deviation with respect to the discovered solution cost, and the number of solutions that was generated before reaching the global optimum. A `$-$' in the \emph{Sol} column indicate that the algorithm did not always converge to the global optimum.}
+   \centering
+   
+   \begin{tabular}{lrrrrrrrrrrrr}
+   \toprule
+   
+  \textbf{Graph} & \multicolumn{3}{c}{\textbf{FT\@{-}ACO}} & \multicolumn{3}{c}{\textbf{SR\@{-}ACO}} & \multicolumn{3}{c}{\textbf{MMAS}} & \multicolumn{3}{c}{\textbf{$AS_{rank}$}}\\
+  \cmidrule(lr){2-4}
+  \cmidrule(lr){5-7}
+  \cmidrule(lr){8-10}
+  \cmidrule(lr){11-13}
+  & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol}\\
+  \cmidrule(lr){2-2}
+  \cmidrule(lr){3-3}
+  \cmidrule(lr){4-4}
+  \cmidrule(lr){5-5}
+  \cmidrule(lr){6-6}
+  \cmidrule(lr){7-7}
+  \cmidrule(lr){8-8}
+  \cmidrule(lr){9-9}
+  \cmidrule(lr){10-10}
+  \cmidrule(lr){11-11}
+  \cmidrule(lr){12-12}
+  \cmidrule(lr){13-13}
+  
+CCNFP10g05a & $6560$ & $0$ & $21080$ & \bm{$6560$} & \bm{$0$} & \bm{$600$} & $6560$ & $0$ & $4040$ & $6562$ & $9.8$ & $-$\\
+CCNFP12g01b & \bm{$224040$} & \bm{$0$} & \bm{$3200$} & $224040$ & $0$ & $21100$ & $224040$ & $0$ & $7240$ & $224123$ & $833.2$ & $-$\\
+CCNFP12g06b & $406792$ & $0$ & $20600$ & $406917$ & $549.3$ & $-$ & \bm{$406792$} & \bm{$0$} & \bm{$14760$} & $407932$ & $1652.6$ & $-$\\[0.7ex]
+CCNFP15g01c & $259563$ & $1825.7$ & $-$ & \bm{$259242$} & \bm{$0$} & \bm{$12200$} & $259242$ & $0$ & $21480$ & $267424$ & $5161.6$ & $-$\\
+CCNFP17g06c & \bm{$408075$} & \bm{$0$} & \bm{$4040$} & $415953$ & $3691.3$ & $-$ & $408075$ & $0$ & $16400$ & $414031$ & $4663.6$ & $-$\\
+CCNFP25g01a & \bm{$359743$} & \bm{$0$} & \bm{$5280$} & $359743$ & $0$ & $6900$ & $359743$ & $0$ & $17280$ & $360068$ & $404.5$ & $-$\\[0.7ex]
+CCNFP25g02a & \bm{$53254$} & \bm{$0$} & \bm{$3160$} & $53254$ & $0$ & $15300$ & $53254$ & $0$ & $17680$ & $53363$ & $138.6$ & $-$\\
+CCNFP25g02b & \bm{$74654$} & \bm{$0$} & \bm{$2240$} & $74654$ & $0$ & $8400$ & $74654$ & $0$ & $11200$ & $74657$ & $22.0$ & $-$\\
+CCNFP25g03a & \bm{$25057$} & \bm{$0$} & \bm{$15120$} & $25057$ & $0$ & $16700$ & $25057$ & $7.7$ & $-$ & $25097$ & $95.6$ & $-$\\[0.7ex]
+CCNFP25g04a & $14506$ & $0$ & $11360$ & \bm{$14506$} & \bm{$0$} & \bm{$3300$} & $14506$ & $0$ & $10160$ & $14506$ & $7.7$ & $-$\\
+CCNFP25g04c & \bm{$15811$} & \bm{$0$} & \bm{$2560$} & $15811$ & $0$ & $15900$ & $15811$ & $0$ & $13440$ & $15812$ & $12.9$ & $-$\\
+CCNFP25g06a & $564154$ & $0$ & $21600$ & $564154$ & $0$ & $18000$ & \bm{$564154$} & \bm{$0$} & \bm{$9280$} & $564176$ & $109.9$ & $-$\\[0.7ex]
+CCNFP25g07a & \bm{$83961$} & \bm{$0$} & \bm{$3280$} & $83961$ & $0$ & $12500$ & $83961$ & $0$ & $12680$ & $83979$ & $102.5$ & $-$\\
+CCNFP25g07b & \bm{$123045$} & \bm{$0$} & \bm{$3880$} & $123196$ & $335.4$ & $-$ & $123045$ & $0$ & $9760$ & $123223$ & $357.2$ & $-$\\
+CCNFP25g07c & $107968$ & $0$ & $10240$ & $107968$ & $0$ & $12300$ & \bm{$107968$} & \bm{$0$} & \bm{$8400$} & $108003$ & $272.3$ & $-$\\[0.7ex]
+CCNFP25g08c & \bm{$31854$} & \bm{$0$} & \bm{$4080$} & $31854$ & $0$ & $15100$ & $31854$ & $0$ & $16400$ & $31875$ & $29.8$ & $-$\\
+CCNFP25g10c & $21222$ & $0$ & $3440$ & \bm{$21222$} & \bm{$0$} & \bm{$1900$} & $21222$ & $0$ & $13240$ & $21222$ & $0.5$ & $-$\\
+CCNFP30g06a & \bm{$857529$} & \bm{$0$} & \bm{$3040$} & $864910$ & $12636.0$ & $-$ & $857529$ & $0$ & $13440$ & $859360$ & $4209.5$ & $-$\\[0.7ex]
+CCNFP30g07c & \bm{$126048$} & \bm{$0$} & \bm{$8400$} & $126765$ & $1151.2$ & $-$ & $126048$ & $0$ & $10440$ & $126059$ & $46.3$ & $-$\\
+CCNFP50g03a & \bm{$29743$} & \bm{$0$} & \bm{$2920$} & $29743$ & $0$ & $23400$ & $29743$ & $0$ & $15120$ & $29745$ & $10.4$ & $-$\\
+  \bottomrule
+  \end{tabular}
+\end{sidewaystable}

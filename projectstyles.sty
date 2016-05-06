@@ -1,0 +1,61 @@
+\ProvidesPackage{projectstyles}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[hypcap]{caption}
+\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{hyperref}
+%\usepackage[all]{hypcap} % jeg tror dette er med i "caption"
+\usepackage{pdfpages}
+\usepackage[titletoc,toc,title]{appendix}
+\usepackage{chngcntr}
+\usepackage{float}
+\usepackage[maxcitenames=2,backend=biber, bibencoding=utf8]{biblatex}
+\usepackage[lined,boxed,commentsnumbered]{algorithm2e}
+
+
+\usepackage[b5paper]{geometry}
+
+\usepackage{bm}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{cleveref}
+
+\usepackage{rotating} % support flipping figures and tables sideways
+
+
+\addbibresource{research.bib}
+
+% Reset counter within sections (chapters)
+\counterwithin{figure}{chapter}
+\counterwithin{table}{chapter}
+\counterwithin{algocf}{chapter}
+
+% Create an argmin operator in math env.
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+
+% Display a complete reference link
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\ref{#1} \nameref*{#1}}}
+
+%\setlength{\intextsep}{10pt} % Vertical space above & below [h] floats
+%\setlength{\textfloatsep}{10pt} % Vertical space below (or above) t (or b) floats
+\setlength{\belowcaptionskip}{1em}
+
+%\def\sectionautorefname{Chapter}
+\def\subsectionautorefname{Section}
+\def\subsubsectionautorefname{Section}
+
+
+
+
+
+% Set caption name font. eg: "Figure 1:"
+\DeclareCaptionFormat{myformat}{\footnotesize\fontshape{\scdefault}\selectfont#1\fontshape{\shapedefault}\selectfont#2#3}
+\captionsetup{format=myformat}
+

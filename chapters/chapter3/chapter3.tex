@@ -1,0 +1,70 @@
+\graphicspath{{chapters/chapter3/}}
+\chapter{Literature Review}
+
+\section{Stagnation in Ant Colony Optimization}
+
+\subsection{Introduction}
+Hvem formulerte det? Definer stagnation: er det når det ikke lages nye løsninger? Eller er det når de nylig genererte løsningene er like som den current global (reinforced) solution?
+
+\subsection{Detecting Stagnation}
+Hva er et godt mål for stagnation? 
+
+\begin{itemize}
+    \item[] \textbf{Fitness} kanskje for crude? Den sier ikke noe om hvordan løsninger som genereres, fitness verdiene som produserer følger en power curve
+    \item[] \textbf{Previously generated} Similarity to previously generated solutions? krever at vi sparer veldig mange løsninger.
+    \item[] \textbf{Similarity} to the current global solution? Euclidian differansen mellom global best of iteration best? matematisk tyngre.
+\end{itemize}
+
+\subsection{Preventing Stagnation}
+bruk mange artikler!
+
+%end Stagnation in Ant Colony Optimization
+
+
+\section{Labor Division}
+
+\subsection{Introduction}
+hvorfor er det en god ide, hva er smart, basis in nature
+
+\subsection{Models of Labor Division}
+\begin{itemize}
+    \item[] \textbf{fixed threshold function} (nevne integrated threshold function?)
+    \item[] \textbf{self\@{-}reinforcement} ("gjør ant’en noe bra, prøver den å gjenta sukseen")
+    \item[] \textbf{Foraging for work?} (alle er foragers, deretter alle er scouts. Varierer mellom epokene)
+    \item[] \textbf{Social inhibition?}
+    \item[] \textbf{extra} implementasjoner av labor division i andre fag-grener (slik som bee)?
+\end{itemize}
+
+%end Stagnation in Ant Colony Optimization
+
+
+\section{Generating Realistic Test Graphs}
+\begin{itemize}
+    \item[] \textbf{random graphs vs realistic graphs} small world graphs are realistic. Mention who named them, and the papers that support this claim
+    \item[] \textbf{power law} 
+    \item[] \textbf{clustering}
+\end{itemize}
+
+%end Stagnation in Ant Colony Optimization
+
+
+\section{Solving Single-Source Uncapacitated Minimum Cost Network Flow Problems}
+\begin{itemize}
+    \item[] \textbf{NP}When concave costs are introduced inMCNFPs, the difficulty to solve them increases and they become NP-Hard (Guisewite and Pardalos, 1991).
+    \item[] \textbf{NP} with fixed-charge costs has also been proven to be NP-Hard by Hochbaum and Segev (1989). Kennington and Unger (1976), Barr et al (1981), and Palekar et al (1990) discuss the difficulty ofMCNFPs re- garding the case of fixed-charge cost functions.
+    \item[] \textbf{generality} One of the main attractiveness of concave MCNFPs is that any Network Flow Problem (NFP) with general nonlinear costs can be transformed into a concaveNFP in an expanded network (Lamar, 1993) 
+    \item[] \textbf{generality} capacitated and multiple sources can be transformed into uncapacitated and single-source NFPs (Wagner, 1958; Zangwill, 1968).
+    \item[] \textbf{ACO solved by} (Concave Minimum Cost Network Flow Problems Solved with a Colony of Ants, 2013) and (An ant colony system-based hybrid algorithm for square root concave cost transhipment problems, 2010)
+\end{itemize}
+
+%end Stagnation in Ant Colony Optimization
+
+
+\section{Related Work}
+\begin{itemize}
+    \item[] \textbf{hybrid functions} snakke om de som har brukt hybrid functions
+    \item[] \textbf{paper} An Ant Colony Optimization Algorithm to Solve the Minimum Cost Network Flow Problem with Concave Cost Functions
+    \item[] \textbf{paper}Combining Lagrangian heuristic and Ant Colony System to solve the Single Source Capacitated Facility Location Problem
+    \item[] \textbf{paper} An improved ant colony optimization based algorithm for the capacitated arc routing problem
+    \item[] \textbf{paper} An ant colony system-based hybrid algorithm for square root concave cost transhipment problems
+\end{itemize}

@@ -1,0 +1,75 @@
+\graphicspath{{chapters/chapter6/}}
+\chapter{Analysis}
+
+\section{The Number of Ants}
+Gjør som i forrige rapport og analyser $\frac{ants}{iterations} = constant$.
+
+%
+% end The Number of Ants
+
+
+\section{Pheromone Evaporation}
+%
+% end Pheromone Evaporation
+
+
+\section{Heuristic Value in the Deposited Pheromone Levels}
+if an ant discovers a solution with half the cost in the next iteration, the deposited pheromone is two 
+
+% 
+% end Heuristic Value in the Deposited Pheromone Levels
+
+
+\section{Analyzing the Convergence Rates}
+\textbf{Forskjellen på konvergeringen til MMAS og T-ACO} Parameterene til disse algoritmene ble optimalisert til å finne så god som mulig løsning etter 600 iterasjoner. Derfor er det ikke rettferdig å si at en algoritme er bedre enn en annen i intervallet 0 til 600 iterations. Likevel, dersom T-ACO hadde blitt terminert før 600 iterations ville den ha yielded en bedre løsning.
+
+%
+% end Analyzing the Convergence Rates
+
+
+\section{How to Recognize Stagnation}
+Analysere stagnation på to nivå. 1 Se på antallet nye løsninger. 2 Se på differansen mellom løsningene man genererer og det globale optima (fitness og euclidian).
+
+%
+% end How to Recognize Stagnation
+
+
+\section{Comparison of Stagnation Avoidance}
+MMAS proved to be less proned to stagnation than $AS_{rank}$, at the cost of having a slower convergence. The mathematics behind the pheromone limitation in MMAS implies that the lower bound $\tau_{min}$ on the pheromone strength is directly proportional to the upper bound $\tau_{max}$. The ratio between $\tau_{min}$ and $\tau_{max}$ governs the stagnation avoidance. In order to prevent stagnation the ratio must not be to great, else the edges with $\tau_{min}$ pheromone would be impossible to randomly select. On the other hand, if the ratio is too small the search would stagnate. 
+
+Se om vi finner noen grafer som kan sammenligne hvordan T-ACO og SR-ACO klarer å unngå stagnation, imens MMAS blir stuck. Referer til tung statistikk. Hvordan stagnerer SR og FT ACO? Kan vi si noe om hvilken som er bedre i det generelle tilfellet? Når er en bedre enn den andre?
+
+\input{chapters/chapter6/figure_stagnation_avoidance}
+\input{chapters/chapter6/table_stagnation_avoidance}
+
+%
+% end Comparison of Stagnation Avoidance
+
+
+\section{Observation on Solution Similarities}
+\textbf{Se på "stammen" av løsningstreet} Mange av kantene i MSTene våre er felles mellom trærene. Dette er interessant å snakke litt om. Kanskje en ide for local search?
+
+%
+% end Observation on Solution Similarities
+
+
+\section{Combining Good Solutions is Ineffective}
+Combining good solutions is a poor heuristic for discovering new (greater) solutions.
+\textbf{Combining} combining multiple solutions is a poor idea. uniforme fordelinger (samt å kombinere løsninger) er en dårlig ide
+
+%
+% end Combining Good Solutions is Ineffective
+
+
+\section{Comparing Random and Small World Graphs}
+\textbf{Compare Moteiro graphs vs Small World graphs} hvilke er enklest å løse? Husk å nevne størrelsesforskjell. Hvilke algoritmer er best på disse? Husk å begrunne / bevise.
+
+%
+% end Comparing Random and Small World Graphs
+
+
+\section{Analyzing Problem Hardness (?)}
+\textbf{binned statistics} binned statistics (sampling distribution) for å klassifisere problem hardness
+
+%
+% end Analyzing Problem Hardness

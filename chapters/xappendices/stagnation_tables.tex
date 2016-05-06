@@ -1,0 +1,232 @@
+
+\chapter{Stagnation Experiment Results}\label{appendix:stagnation_tables}
+
+\begin{sidewaystable}[p]
+   \tiny
+   \caption[Stagnation avoidance efficiency]{A comparison of how well the stagnation avoidance strategies coped with MCFP instances where the basic ACO algorithm stagnated. The table decipt the average cost of solutions from 100 runs with optimal parameter configuration. The algorithms was allowed to generate at most $24000$ solutions. The columns show the average cost, the standard deviation with respect to the discovered solution cost, and the number of solutions that was generated before reaching the global optimum. A `$-$' in the \emph{Sol} column indicate that the algorithm did not always converge to the global optimum.}
+   \centering
+   
+   \begin{tabular}{lrrrrrrrrrrrr}
+   \toprule
+   
+  \textbf{Graph} & \multicolumn{3}{c}{\textbf{Threshold\@{-}ACO}} & \multicolumn{3}{c}{\textbf{Reinforcement\@{-}ACO}} & \multicolumn{3}{c}{\textbf{Max\@{-}Min Ant System}} & \multicolumn{3}{c}{\textbf{$AS_{rank}$}}\\
+  \cmidrule(lr){2-4}
+  \cmidrule(lr){5-7}
+  \cmidrule(lr){8-10}
+  \cmidrule(lr){11-13}
+  & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol}\\
+  \cmidrule(lr){2-2}
+  \cmidrule(lr){3-3}
+  \cmidrule(lr){4-4}
+  \cmidrule(lr){5-5}
+  \cmidrule(lr){6-6}
+  \cmidrule(lr){7-7}
+  \cmidrule(lr){8-8}
+  \cmidrule(lr){9-9}
+  \cmidrule(lr){10-10}
+  \cmidrule(lr){11-11}
+  \cmidrule(lr){12-12}
+  \cmidrule(lr){13-13}
+  
+CCNFP10g05a & $6560$ & $0$ & $21080$ & \bm{$6560$} & \bm{$0$} & \bm{$600$} & $6560$ & $0$ & $4040$ & $6562$ & $9.8$ & $-$\\
+CCNFP10g07c & \bm{$41085$} & \bm{$0$} & \bm{$1040$} & $41085$ & $0$ & $3400$ & $41085$ & $0$ & $4120$ & $41104$ & $110.4$ & $-$\\
+CCNFP12g01b & \bm{$224040$} & \bm{$0$} & \bm{$3200$} & $224040$ & $0$ & $21100$ & $224040$ & $0$ & $7240$ & $224123$ & $833.2$ & $-$\\[0.7ex]
+CCNFP12g01c & $210745$ & $85.4$ & $-$ & \bm{$210714$} & \bm{$0$} & \bm{$8700$} & $210717$ & $15.3$ & $-$ & $210789$ & $108.9$ & $-$\\
+CCNFP12g03b & $13605$ & $0$ & $9640$ & $13605$ & $0$ & $14600$ & \bm{$13605$} & \bm{$0$} & \bm{$6960$} & $13605$ & $4.8$ & $-$\\
+CCNFP12g04c & $7167$ & $0$ & $3520$ & \bm{$7167$} & \bm{$0$} & \bm{$1000$} & $7167$ & $0$ & $4920$ & $7167$ & $2.3$ & $-$\\[0.7ex]
+CCNFP12g06a & \bm{$396131$} & \bm{$0$} & \bm{$4680$} & $400469$ & $7254.3$ & $-$ & $398714$ & $5950.8$ & $-$ & $404305$ & $8213.3$ & $-$\\
+CCNFP12g06b & $406792$ & $0$ & $20600$ & $406917$ & $549.3$ & $-$ & \bm{$406792$} & \bm{$0$} & \bm{$14760$} & $407932$ & $1652.6$ & $-$\\
+CCNFP12g07b & $45581$ & $0$ & $19240$ & $45581$ & $0$ & $9500$ & \bm{$45581$} & \bm{$0$} & \bm{$8360$} & $45585$ & $7.7$ & $-$\\[0.7ex]
+CCNFP12g08a & $13558$ & $0$ & $7520$ & \bm{$13558$} & \bm{$0$} & \bm{$3300$} & $13558$ & $0$ & $5440$ & $13559$ & $11.3$ & $-$\\
+CCNFP15g01a & \bm{$272321$} & \bm{$1319.7$} & \bm{$-$} & $272501$ & $1779.8$ & $-$ & $274072$ & $2780.3$ & $-$ & $276977$ & $2171.7$ & $-$\\
+CCNFP15g01c & $259563$ & $1825.7$ & $-$ & \bm{$259242$} & \bm{$0$} & \bm{$12200$} & $259242$ & $0$ & $21480$ & $267424$ & $5161.6$ & $-$\\[0.7ex]
+CCNFP15g06a & \bm{$371267$} & \bm{$0$} & \bm{$1440$} & $371267$ & $0$ & $9700$ & $371267$ & $0$ & $5360$ & $371307$ & $403.9$ & $-$\\
+CCNFP15g06b & \bm{$526417$} & \bm{$0$} & \bm{$5800$} & $526639$ & $423.7$ & $-$ & $526417$ & $0$ & $20240$ & $527189$ & $1736.7$ & $-$\\
+CCNFP15g06c & \bm{$435793$} & \bm{$0$} & \bm{$10520$} & $435793$ & $0$ & $23800$ & $435793$ & $0$ & $13560$ & $437294$ & $2495.1$ & $-$\\[0.7ex]
+CCNFP15g07a & \bm{$47069$} & \bm{$0$} & \bm{$9080$} & $47069$ & $0$ & $9600$ & $47133$ & $281.4$ & $-$ & $47320$ & $522.5$ & $-$\\
+CCNFP15g08a & \bm{$17596$} & \bm{$0$} & \bm{$1440$} & $17596$ & $0$ & $6100$ & $17596$ & $0$ & $8680$ & $17598$ & $12.9$ & $-$\\
+CCNFP17g01a & $219659$ & $435.8$ & $-$ & $219952$ & $988.4$ & $-$ & \bm{$219428$} & \bm{$0$} & \bm{$13920$} & $220160$ & $1084.4$ & $-$\\[0.7ex]
+CCNFP17g01b & \bm{$203979$} & \bm{$1.6$} & \bm{$-$} & $210333$ & $8374.5$ & $-$ & $204018$ & $221.3$ & $-$ & $205094$ & $1161.5$ & $-$\\
+CCNFP17g06a & $465674$ & $0$ & $14760$ & $466792$ & $2997.4$ & $-$ & \bm{$465674$} & \bm{$0$} & \bm{$14320$} & $467338$ & $2296.4$ & $-$\\
+CCNFP17g06b & \bm{$477398$} & \bm{$0$} & \bm{$12120$} & $477402$ & $24.1$ & $-$ & $477399$ & $14.0$ & $-$ & $477416$ & $47.4$ & $-$\\[0.7ex]
+CCNFP17g06c & \bm{$408075$} & \bm{$0$} & \bm{$4040$} & $415953$ & $3691.3$ & $-$ & $408075$ & $0$ & $16400$ & $414031$ & $4663.6$ & $-$\\
+CCNFP17g07b & $51076$ & $0$ & $16480$ & \bm{$51076$} & \bm{$0$} & \bm{$12200$} & $51077$ & $4.6$ & $-$ & $51082$ & $8.6$ & $-$\\
+CCNFP19g01a & \bm{$243934$} & \bm{$0$} & \bm{$4440$} & $243934$ & $0$ & $18400$ & $243934$ & $0$ & $6560$ & $244073$ & $976.6$ & $-$\\[0.7ex]
+CCNFP19g01c & \bm{$269385$} & \bm{$0$} & \bm{$20760$} & $270029$ & $773.1$ & $-$ & $269449$ & $314.6$ & $-$ & $271288$ & $2423.3$ & $-$\\
+CCNFP19g02a & \bm{$35058$} & \bm{$0$} & \bm{$2400$} & $35058$ & $0$ & $6800$ & $35058$ & $0$ & $10200$ & $35068$ & $67.7$ & $-$\\
+CCNFP19g03c & $23231$ & $0$ & $13480$ & $23231$ & $0$ & $23600$ & \bm{$23231$} & \bm{$0$} & \bm{$9320$} & $23233$ & $10.0$ & $-$\\[0.7ex]
+CCNFP19g04a & \bm{$18728$} & \bm{$0$} & \bm{$4240$} & $18728$ & $0$ & $8900$ & $18728$ & $0$ & $10720$ & $18732$ & $21.6$ & $-$\\
+CCNFP19g06b & \bm{$523101$} & \bm{$0$} & \bm{$6680$} & $524635$ & $3316.4$ & $-$ & $523101$ & $0$ & $14440$ & $524391$ & $2917.7$ & $-$\\
+CCNFP19g06c & $643720$ & $211.5$ & $-$ & $643699$ & $0$ & $21100$ & \bm{$643699$} & \bm{$0$} & \bm{$9200$} & $644237$ & $1821.9$ & $-$\\[0.7ex]
+CCNFP19g07b & \bm{$61375$} & \bm{$0$} & \bm{$2080$} & $61384$ & $98.4$ & $-$ & $61375$ & $0$ & $12320$ & $61404$ & $158.7$ & $-$\\
+CCNFP19g07c & \bm{$61732$} & \bm{$0$} & \bm{$5840$} & $61732$ & $0$ & $11900$ & $61732$ & $0$ & $10960$ & $61749$ & $105.9$ & $-$\\
+CCNFP19g09a & \bm{$16580$} & \bm{$0$} & \bm{$7040$} & $16580$ & $0$ & $12600$ & $16580$ & $0$ & $10760$ & $16581$ & $3.4$ & $-$\\[0.7ex]
+
+  \bottomrule
+  \end{tabular}
+\end{sidewaystable}
+
+\begin{sidewaystable}[p]
+   \tiny
+   \caption[Stagnation avoidance efficiency]{A comparison of how well the stagnation avoidance strategies coped with MCFP instances where the basic ACO algorithm stagnated. The table decipt the average cost of solutions from 100 runs with optimal parameter configuration. The algorithms was allowed to generate at most $24000$ solutions. The columns show the average cost, the standard deviation with respect to the discovered solution cost, and the number of solutions that was generated before reaching the global optimum. A `$-$' in the \emph{Sol} column indicate that the algorithm did not always converge to the global optimum.}
+   \centering
+   
+   \begin{tabular}{lrrrrrrrrrrrr}
+   \toprule
+   
+  \textbf{Graph} & \multicolumn{3}{c}{\textbf{Threshold\@{-}ACO}} & \multicolumn{3}{c}{\textbf{Reinforcement\@{-}ACO}} & \multicolumn{3}{c}{\textbf{Max\@{-}Min Ant System}} & \multicolumn{3}{c}{\textbf{$AS_{rank}$}}\\
+  \cmidrule(lr){2-4}
+  \cmidrule(lr){5-7}
+  \cmidrule(lr){8-10}
+  \cmidrule(lr){11-13}
+  & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol}\\
+  \cmidrule(lr){2-2}
+  \cmidrule(lr){3-3}
+  \cmidrule(lr){4-4}
+  \cmidrule(lr){5-5}
+  \cmidrule(lr){6-6}
+  \cmidrule(lr){7-7}
+  \cmidrule(lr){8-8}
+  \cmidrule(lr){9-9}
+  \cmidrule(lr){10-10}
+  \cmidrule(lr){11-11}
+  \cmidrule(lr){12-12}
+  \cmidrule(lr){13-13}
+  
+CCNFP25g01a & \bm{$359743$} & \bm{$0$} & \bm{$5280$} & $359743$ & $0$ & $6900$ & $359743$ & $0$ & $17280$ & $360068$ & $404.5$ & $-$\\
+CCNFP25g01b & \bm{$362063$} & \bm{$259.0$} & \bm{$-$} & $368245$ & $6392.1$ & $-$ & $362219$ & $664.1$ & $-$ & $364002$ & $2082.1$ & $-$\\
+CCNFP25g01c & \bm{$345012$} & \bm{$137.7$} & \bm{$-$} & $345146$ & $421.4$ & $-$ & $345635$ & $689.8$ & $-$ & $346377$ & $1284.0$ & $-$\\[0.7ex]
+CCNFP25g02a & \bm{$53254$} & \bm{$0$} & \bm{$3160$} & $53254$ & $0$ & $15300$ & $53254$ & $0$ & $17680$ & $53363$ & $138.6$ & $-$\\
+CCNFP25g02b & \bm{$74654$} & \bm{$0$} & \bm{$2240$} & $74654$ & $0$ & $8400$ & $74654$ & $0$ & $11200$ & $74657$ & $22.0$ & $-$\\
+CCNFP25g03a & \bm{$25057$} & \bm{$0$} & \bm{$15120$} & $25057$ & $0$ & $16700$ & $25057$ & $7.7$ & $-$ & $25097$ & $95.6$ & $-$\\[0.7ex]
+CCNFP25g04a & $14506$ & $0$ & $11360$ & \bm{$14506$} & \bm{$0$} & \bm{$3300$} & $14506$ & $0$ & $10160$ & $14506$ & $7.7$ & $-$\\
+CCNFP25g04c & \bm{$15811$} & \bm{$0$} & \bm{$2560$} & $15811$ & $0$ & $15900$ & $15811$ & $0$ & $13440$ & $15812$ & $12.9$ & $-$\\
+CCNFP25g06a & $564154$ & $0$ & $21600$ & $564154$ & $0$ & $18000$ & \bm{$564154$} & \bm{$0$} & \bm{$9280$} & $564176$ & $109.9$ & $-$\\[0.7ex]
+CCNFP25g06b & $881319$ & $221.8$ & $-$ & \bm{$881297$} & \bm{$0$} & \bm{$15600$} & $881319$ & $221.8$ & $-$ & $882786$ & $3685.4$ & $-$\\
+CCNFP25g06c & $848446$ & $352.3$ & $-$ & $851095$ & $7988.7$ & $-$ & \bm{$848401$} & \bm{$0$} & \bm{$16960$} & $850005$ & $1602.2$ & $-$\\
+CCNFP25g07a & \bm{$83961$} & \bm{$0$} & \bm{$3280$} & $83961$ & $0$ & $12500$ & $83961$ & $0$ & $12680$ & $83979$ & $102.5$ & $-$\\[0.7ex]
+CCNFP25g07b & \bm{$123045$} & \bm{$0$} & \bm{$3880$} & $123196$ & $335.4$ & $-$ & $123045$ & $0$ & $9760$ & $123223$ & $357.2$ & $-$\\
+CCNFP25g07c & $107968$ & $0$ & $10240$ & $107968$ & $0$ & $12300$ & \bm{$107968$} & \bm{$0$} & \bm{$8400$} & $108003$ & $272.3$ & $-$\\
+CCNFP25g08c & \bm{$31854$} & \bm{$0$} & \bm{$4080$} & $31854$ & $0$ & $15100$ & $31854$ & $0$ & $16400$ & $31875$ & $29.8$ & $-$\\[0.7ex]
+CCNFP25g10c & $21222$ & $0$ & $3440$ & \bm{$21222$} & \bm{$0$} & \bm{$1900$} & $21222$ & $0$ & $13240$ & $21222$ & $0.5$ & $-$\\
+CCNFP30g01a & \bm{$428521$} & \bm{$0$} & \bm{$11560$} & $428583$ & $623.9$ & $-$ & $428720$ & $1398.7$ & $-$ & $433065$ & $6253.8$ & $-$\\
+CCNFP30g01b & \bm{$388412$} & \bm{$0$} & \bm{$6040$} & $391947$ & $6857.8$ & $-$ & $388412$ & $0$ & $16520$ & $389175$ & $952.4$ & $-$\\[0.7ex]
+CCNFP30g01c & \bm{$559697$} & \bm{$117.0$} & \bm{$-$} & $559707$ & $189.2$ & $-$ & $559726$ & $245.1$ & $-$ & $560504$ & $1093.9$ & $-$\\
+CCNFP30g02a & \bm{$67542$} & \bm{$0$} & \bm{$2200$} & $67542$ & $0$ & $5900$ & $67542$ & $0$ & $10320$ & $67555$ & $128.9$ & $-$\\
+CCNFP30g02c & \bm{$67806$} & \bm{$0$} & \bm{$5600$} & $67815$ & $65.3$ & $-$ & $67806$ & $0$ & $18280$ & $67922$ & $198.6$ & $-$\\[0.7ex]
+CCNFP30g03a & \bm{$31744$} & \bm{$0$} & \bm{$5440$} & $31753$ & $47.0$ & $-$ & $31754$ & $47.2$ & $-$ & $31787$ & $92.2$ & $-$\\
+CCNFP30g04a & $23232$ & $0$ & $15680$ & $23232$ & $0$ & $13300$ & \bm{$23232$} & \bm{$0$} & \bm{$9760$} & $23234$ & $17.0$ & $-$\\
+CCNFP30g04b & \bm{$18074$} & \bm{$0$} & \bm{$5160$} & $18074$ & $0$ & $5700$ & $18074$ & $0$ & $14640$ & $18074$ & $2.0$ & $-$\\[0.7ex]
+CCNFP30g04c & \bm{$16431$} & \bm{$0$} & \bm{$3160$} & $16431$ & $0$ & $5300$ & $16431$ & $0$ & $12760$ & $16431$ & $1.1$ & $-$\\
+CCNFP30g05c & \bm{$14730$} & \bm{$0$} & \bm{$4040$} & $14730$ & $0$ & $4700$ & $14730$ & $0$ & $15000$ & $14730$ & $1.2$ & $-$\\
+CCNFP30g06a & \bm{$857529$} & \bm{$0$} & \bm{$3040$} & $864910$ & $12636.0$ & $-$ & $857529$ & $0$ & $13440$ & $859360$ & $4209.5$ & $-$\\[0.7ex]
+CCNFP30g06b & \bm{$784772$} & \bm{$0$} & \bm{$2880$} & $785486$ & $4688.4$ & $-$ & $784772$ & $0$ & $19080$ & $786777$ & $4116.4$ & $-$\\
+CCNFP30g06c & $860753$ & $5036.4$ & $-$ & \bm{$859244$} & \bm{$1670.3$} & \bm{$-$} & $860937$ & $5123.2$ & $-$ & $871528$ & $8404.5$ & $-$\\
+CCNFP30g07a & \bm{$103073$} & \bm{$0$} & \bm{$4640$} & $103073$ & $0$ & $18300$ & $103073$ & $0$ & $9000$ & $103108$ & $249.3$ & $-$\\[0.7ex]
+CCNFP30g07b & $129775$ & $4.1$ & $-$ & \bm{$129775$} & \bm{$0$} & \bm{$18000$} & $129802$ & $135.5$ & $-$ & $130250$ & $543.8$ & $-$\\
+CCNFP30g07c & \bm{$126048$} & \bm{$0$} & \bm{$8400$} & $126765$ & $1151.2$ & $-$ & $126048$ & $0$ & $10440$ & $126059$ & $46.3$ & $-$\\
+CCNFP30g09b & $34532$ & $0$ & $12640$ & \bm{$34532$} & \bm{$0$} & \bm{$8800$} & $34532$ & $0$ & $13560$ & $34542$ & $25.2$ & $-$\\[0.7ex]
+CCNFP30g09c & $36626$ & $0$ & $8600$ & \bm{$36626$} & \bm{$0$} & \bm{$6700$} & $36626$ & $0$ & $10680$ & $36629$ & $25.6$ & $-$\\
+CCNFP30g10a & $27814$ & $0$ & $5040$ & \bm{$27814$} & \bm{$0$} & \bm{$2600$} & $27814$ & $0$ & $15280$ & $27815$ & $9.6$ & $-$\\
+
+  \bottomrule
+  \end{tabular}
+\end{sidewaystable}
+
+\begin{sidewaystable}[p]
+   \tiny
+   \caption[Stagnation avoidance efficiency]{A comparison of how well the stagnation avoidance strategies coped with MCFP instances where the basic ACO algorithm stagnated. The table decipt the average cost of solutions from 100 runs with optimal parameter configuration. The algorithms was allowed to generate at most $24000$ solutions. The columns show the average cost, the standard deviation with respect to the discovered solution cost, and the number of solutions that was generated before reaching the global optimum. A `$-$' in the \emph{Sol} column indicate that the algorithm did not always converge to the global optimum.}
+   \centering
+   
+   \begin{tabular}{lrrrrrrrrrrrr}
+   \toprule
+   
+  \textbf{Graph} & \multicolumn{3}{c}{\textbf{Threshold\@{-}ACO}} & \multicolumn{3}{c}{\textbf{Reinforcement\@{-}ACO}} & \multicolumn{3}{c}{\textbf{Max\@{-}Min Ant System}} & \multicolumn{3}{c}{\textbf{$AS_{rank}$}}\\
+  \cmidrule(lr){2-4}
+  \cmidrule(lr){5-7}
+  \cmidrule(lr){8-10}
+  \cmidrule(lr){11-13}
+  & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol}\\
+  \cmidrule(lr){2-2}
+  \cmidrule(lr){3-3}
+  \cmidrule(lr){4-4}
+  \cmidrule(lr){5-5}
+  \cmidrule(lr){6-6}
+  \cmidrule(lr){7-7}
+  \cmidrule(lr){8-8}
+  \cmidrule(lr){9-9}
+  \cmidrule(lr){10-10}
+  \cmidrule(lr){11-11}
+  \cmidrule(lr){12-12}
+  \cmidrule(lr){13-13}
+  
+CCNFP40g01a & \bm{$291606$} & \bm{$0$} & \bm{$12400$} & $292295$ & $2418.5$ & $-$ & $291644$ & $139.3$ & $-$ & $293578$ & $1778.0$ & $-$\\[0.7ex]
+CCNFP40g01b & \bm{$322054$} & \bm{$805.3$} & \bm{$-$} & $323553$ & $2138.4$ & $-$ & $325072$ & $1196.3$ & $-$ & $328121$ & $1814.7$ & $-$\\
+CCNFP40g01c & \bm{$398699$} & \bm{$0$} & \bm{$10040$} & $398760$ & $250.7$ & $-$ & $398746$ & $215.0$ & $-$ & $401473$ & $2279.6$ & $-$\\
+CCNFP40g02a & \bm{$53553$} & \bm{$30.2$} & \bm{$-$} & $53571$ & $75.6$ & $-$ & $53557$ & $57.0$ & $-$ & $53806$ & $253.6$ & $-$\\[0.7ex]
+CCNFP40g02b & \bm{$47635$} & \bm{$0$} & \bm{$8880$} & $47681$ & $218.6$ & $-$ & $47635$ & $0$ & $21240$ & $47704$ & $271.9$ & $-$\\
+CCNFP40g02c & \bm{$65529$} & \bm{$15.2$} & \bm{$-$} & $65684$ & $372.5$ & $-$ & $65540$ & $16.2$ & $-$ & $65640$ & $214.4$ & $-$\\
+CCNFP40g03a & \bm{$23193$} & \bm{$0$} & \bm{$2560$} & $23193$ & $0$ & $4800$ & $23193$ & $0$ & $14800$ & $23194$ & $5.3$ & $-$\\[0.7ex]
+CCNFP40g03b & $26259$ & $0$ & $8560$ & \bm{$26259$} & \bm{$0$} & \bm{$6800$} & $26259$ & $0$ & $21000$ & $26267$ & $32.5$ & $-$\\
+CCNFP40g03c & \bm{$26335$} & \bm{$0$} & \bm{$2640$} & $26335$ & $0$ & $23800$ & $26335$ & $0$ & $15000$ & $26343$ & $54.1$ & $-$\\
+CCNFP40g04b & $13220$ & $1.7$ & $-$ & \bm{$13220$} & \bm{$0$} & \bm{$16200$} & $13221$ & $2.8$ & $-$ & $13227$ & $14.0$ & $-$\\[0.7ex]
+CCNFP40g05a & \bm{$11937$} & \bm{$0$} & \bm{$3960$} & $11937$ & $0$ & $8200$ & $11937$ & $0$ & $12600$ & $11937$ & $0.8$ & $-$\\
+CCNFP40g05b & \bm{$8755$} & \bm{$0$} & \bm{$2400$} & $8755$ & $0$ & $5600$ & $8755$ & $0$ & $13600$ & $8755$ & $1.1$ & $-$\\
+CCNFP50g01a & \bm{$307769$} & \bm{$0$} & \bm{$12600$} & $308427$ & $1119.4$ & $-$ & $307769$ & $0$ & $21520$ & $310081$ & $1747.8$ & $-$\\[0.7ex]
+CCNFP50g01b & \bm{$415245$} & \bm{$648.4$} & \bm{$-$} & $415264$ & $1054.7$ & $-$ & $416121$ & $590.4$ & $-$ & $419040$ & $2684.0$ & $-$\\
+CCNFP50g01c & \bm{$334385$} & \bm{$226.5$} & \bm{$-$} & $341256$ & $5853.9$ & $-$ & $336224$ & $1369.2$ & $-$ & $342461$ & $5253.1$ & $-$\\
+CCNFP50g02a & \bm{$58404$} & \bm{$0$} & \bm{$20240$} & $58428$ & $88.4$ & $-$ & $58405$ & $10.6$ & $-$ & $58484$ & $46.7$ & $-$\\[0.7ex]
+CCNFP50g02b & \bm{$41449$} & \bm{$0$} & \bm{$18360$} & $41470$ & $59.2$ & $-$ & $41470$ & $33.9$ & $-$ & $41654$ & $131.8$ & $-$\\
+CCNFP50g02c & \bm{$73791$} & \bm{$0$} & \bm{$1880$} & $73791$ & $0$ & $16900$ & $73791$ & $0$ & $10640$ & $73834$ & $208.8$ & $-$\\
+CCNFP50g03a & \bm{$29743$} & \bm{$0$} & \bm{$2920$} & $29743$ & $0$ & $23400$ & $29743$ & $0$ & $15120$ & $29745$ & $10.4$ & $-$\\[0.7ex]
+CCNFP50g03c & \bm{$26701$} & \bm{$0$} & \bm{$2520$} & $26701$ & $6.0$ & $-$ & $26701$ & $0$ & $14800$ & $26707$ & $17.2$ & $-$\\
+CCNFP50g04a & \bm{$11026$} & \bm{$0$} & \bm{$1840$} & $11026$ & $0$ & $13100$ & $11026$ & $0$ & $12760$ & $11026$ & $0.8$ & $-$\\
+CCNFP50g04b & $19127$ & $1.2$ & $-$ & \bm{$19127$} & \bm{$0$} & \bm{$12800$} & $19127$ & $1.9$ & $-$ & $19131$ & $6.4$ & $-$\\[0.7ex]
+CCNFP50g05a & $15733$ & $0$ & $22560$ & \bm{$15733$} & \bm{$0$} & \bm{$4800$} & $15733$ & $0$ & $13200$ & $15738$ & $17.4$ & $-$\\
+CCNFP50g05c & $17051$ & $0$ & $8080$ & \bm{$17051$} & \bm{$0$} & \bm{$4300$} & $17051$ & $0$ & $17840$ & $17053$ & $6.8$ & $-$\\
+SmallWorldN100g1a & \bm{$148628$} & \bm{$23.7$} & \bm{$-$} & $152493$ & $1411.0$ & $-$ & $149390$ & $641.6$ & $-$ & $151131$ & $1324.2$ & $-$\\[0.7ex]
+SmallWorldN100g1b & \bm{$144476$} & \bm{$26.8$} & \bm{$-$} & $148665$ & $1244.1$ & $-$ & $145077$ & $381.8$ & $-$ & $146462$ & $1089.4$ & $-$\\
+SmallWorldN100g1c & \bm{$145888$} & \bm{$6.9$} & \bm{$-$} & $148747$ & $1334.8$ & $-$ & $147048$ & $610.4$ & $-$ & $148725$ & $1034.0$ & $-$\\
+SmallWorldN100g2a & \bm{$1442046$} & \bm{$0$} & \bm{$6400$} & $1450270$ & $4610.5$ & $-$ & $1442725$ & $1054.6$ & $-$ & $1446502$ & $4423.8$ & $-$\\[0.7ex]
+
+
+  \bottomrule
+  \end{tabular}
+\end{sidewaystable}
+
+\begin{sidewaystable}[p]
+   \tiny
+   \caption[Stagnation avoidance efficiency]{A comparison of how well the stagnation avoidance strategies coped with MCFP instances where the basic ACO algorithm stagnated. The table decipt the average cost of solutions from 100 runs with optimal parameter configuration. The algorithms was allowed to generate at most $24000$ solutions. The columns show the average cost, the standard deviation with respect to the discovered solution cost, and the number of solutions that was generated before reaching the global optimum. A `$-$' in the \emph{Sol} column indicate that the algorithm did not always converge to the global optimum.}
+   \centering
+   
+   \begin{tabular}{lrrrrrrrrrrrr}
+   \toprule
+   
+  \textbf{Graph} & \multicolumn{3}{c}{\textbf{Threshold\@{-}ACO}} & \multicolumn{3}{c}{\textbf{Reinforcement\@{-}ACO}} & \multicolumn{3}{c}{\textbf{Max\@{-}Min Ant System}} & \multicolumn{3}{c}{\textbf{$AS_{rank}$}}\\
+  \cmidrule(lr){2-4}
+  \cmidrule(lr){5-7}
+  \cmidrule(lr){8-10}
+  \cmidrule(lr){11-13}
+  & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol}\\
+  \cmidrule(lr){2-2}
+  \cmidrule(lr){3-3}
+  \cmidrule(lr){4-4}
+  \cmidrule(lr){5-5}
+  \cmidrule(lr){6-6}
+  \cmidrule(lr){7-7}
+  \cmidrule(lr){8-8}
+  \cmidrule(lr){9-9}
+  \cmidrule(lr){10-10}
+  \cmidrule(lr){11-11}
+  \cmidrule(lr){12-12}
+  \cmidrule(lr){13-13}
+  
+SmallWorldN100g1a & \bm{$148628$} & \bm{$23.7$} & \bm{$-$} & $152493$ & $1411.0$ & $-$ & $149390$ & $641.6$ & $-$ & $151131$ & $1324.2$ & $-$\\[0.7ex]
+SmallWorldN100g1b & \bm{$144476$} & \bm{$26.8$} & \bm{$-$} & $148665$ & $1244.1$ & $-$ & $145077$ & $381.8$ & $-$ & $146462$ & $1089.4$ & $-$\\
+SmallWorldN100g1c & \bm{$145888$} & \bm{$6.9$} & \bm{$-$} & $148747$ & $1334.8$ & $-$ & $147048$ & $610.4$ & $-$ & $148725$ & $1034.0$ & $-$\\
+SmallWorldN100g2a & \bm{$1442046$} & \bm{$0$} & \bm{$6400$} & $1450270$ & $4610.5$ & $-$ & $1442725$ & $1054.6$ & $-$ & $1446502$ & $4423.8$ & $-$\\[0.7ex]
+
+
+  \bottomrule
+  \end{tabular}
+\end{sidewaystable}

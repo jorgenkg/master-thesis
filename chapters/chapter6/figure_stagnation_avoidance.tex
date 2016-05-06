@@ -1,0 +1,32 @@
+\begin{figure}[htp] % (here, top of the page, the next page)
+\graphicspath{{chapters/chapter5/images/graphs/}}
+%\centering
+% CCNFP10g5a CCNFP12g6b CCNFP17g1b CCNFP17g1a CCNFP25g1b CCNFP25g3a CCNFP25g2a CCNFP25g7b
+
+\begin{subfigure}[t]{0.5\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=\linewidth, keepaspectratio]{CCNFP12g6a.pdf}
+  \caption{Graph CCNFP12g6a: Tresholded-ACO is the only algorithm that implements a sufficient stagnation avoidance behavior and reaches the global optima.}\label{fig:stagnation_avoidance_effeciency_fig1}
+\end{subfigure}
+\quad
+\begin{subfigure}[t]{0.5\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=\linewidth, keepaspectratio]{CCNFP15g1a.pdf}
+  \caption{Graph CCNFP15g1a: The curves indicate slow convergence. However, the algorithms all show the ability to avoid stagnation compared to the basic algorithm. }\label{fig:stagnation_avoidance_effeciency_fig2}
+\end{subfigure}
+
+\begin{subfigure}[t]{0.5\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=\linewidth, keepaspectratio]{CCNFP15g1c.pdf}
+  \caption{Graph CCNFP15g1c: The basic algorithm quickly stagnates to a local minimum, in contrast to the stagnation avoidance schemes that continues to converge toward the global minima. Self-Reinforcement ACO outshine the rest, while Thresholded-ACO does not reach the global optima.}\label{fig:stagnation_avoidance_effeciency_fig3}
+\end{subfigure}
+\quad
+\begin{subfigure}[t]{0.5\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=\linewidth, keepaspectratio]{CCNFP17g6c.pdf}
+  \caption{Graph CCNFP17g6c: The figure illustrates that Self-Reinforcement ACO stagnates before reaching the solution quality obtained by the basic algorithm. However, Thresholded-ACO clearly outclass the rest.}\label{fig:stagnation_avoidance_effeciency_fig4}
+\end{subfigure}
+
+
+\caption{Comparison of how the different stagnation avoidance schemes perform when the basic Ant Colony Optimization algorithm stagnates.}\label{fig:stagnation_avoidance_effeciency}
+\end{figure}

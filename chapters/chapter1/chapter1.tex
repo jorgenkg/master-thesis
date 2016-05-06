@@ -1,0 +1,55 @@
+\graphicspath{{chapters/chapter1/}}
+\chapter{Introduction}
+
+\section{Research Motivation}
+Insect colonies has captivated humans for centuries. Insects are simple creatures on the individual level, yet the nature of eusocial insect societies is complex. Ants has proven to be one of the most successful species on the planet. The first ant walked the earth roughly 100 million years ago. They outlived the dinosaur extinction and witnessed the emergence of our ancient human ancestors. Today, the number of ants is estimated to be approximately $10^{16}$ individuals \cite{Dorigo2000}. 
+
+Ants are capable of constructing enormous mounds and discover the shortest path between their colony and food sources. This makes ant algorithms appealing to apply to complex problems, because even though the individuals are relatively simple, they are capable of solving hard problems. 
+
+The emergence of complex behavior from simple agents have inspired the field of swarm intelligence (SI) to study how mathematical models of ant colonies can be the foundation of algorithms. This idea form the pillar of Ant Colony Optimization (ACO) algorithms. The goal of ACO is to mimic and adapt the behavior of real ants to solve combinatorial optimization problems. Analogous to real ants, the artificial ants in ACO is only presented with local knowledge of the properties they observe. Thus the algorithm form a decentralized system without any global, controlling agent.
+
+ACO algorithms have been applied to a variety of problems such as facility location problems \cite{Chen2008}, routing problems \cite{Santos2010}, set cover problems \cite{Crawford2006}, and traveling salesman problems \cite{Dorigo1997,Elloumi2014}. 
+
+\paragraph{way too poorly written:} However, ACO algorithms suffer from stagnation. The stagnation term was coined by \textcite{Dorigo1996} and describes a situation where no further solutions are discovered. It is therefore essential to prevent stagnating the search.
+
+% end Research Motivation
+
+
+\section{Research Topic and Questions}\label{sec:research_topic_and_questions}
+The problem investigated in this paper was the uncapacitated single source, multiple sink minimum cost flow problem (MCFP) with concave cost functions. This is a NP-hard problem \cite{Guisewite1990}. The research topic was:
+
+\begin{quote}\itshape
+Incorporating Labor Division into Ant Colony Optimization
+\end{quote}
+
+The goal of this paper was to evaluate how the two labor division models \emph{self-reinforcement} and \emph{fixed response threshold} model could be combined with the Ant Colony Optimization algorithm. The performance of the labor division models was then compared with the Max-Min Ant System described by \textcite{Stutzle1998}. The paper focused on how labor division can be brought into play to avoid stagnation and balance the search between exploration and exploitation. Thus, we defined the following research questions with regard to MCFP problems with concave cost functions:
+
+\begin{itemize}
+   \item[1] How can labor division be incorporated into ACO to counter stagnation and how does it affect the performance?
+   \item[2] How are exploration and exploitation in ACO balanced by the Threshold-Information and Self-Reinforcement labor division models?
+\end{itemize}
+
+% end Research Topic and Questions
+
+
+\section{Research Method}
+The principal research method to answer the research questions in \fullref{sec:research_topic_and_questions} was to conduct an extensive literature review of modern labor division models. The literature review was used as a basis to devise two labor division schemes for the ACO algorithm, which were tested and compared to the popular Max-Min Ant System algorithm. The result of the literature review is presented in \textbf{reference literature review}.
+
+The computational experiments consisted of applying the three algorithms on a large collection MFCPs, and comparing their performance based on statistics. The experiments were intended to identify whether the incorporation of labor division could improve the performance of ant-based algorithms in the MFCP domain.
+
+
+\section{Report Outline}
+\begin{comment}
+This report is structured accordingly:
+\begin{itemize}
+   \item[]\textbf{Chapter 1} offers an introduction to the problem and presents the motivation and research questions.
+   \item[]\textbf{Chapter 2} formally define the mathematical MFMC problem.
+   \item[]\textbf{Chapter 3} discusses the connection between swarm intelligence and ants, describes historically important ant colony optimization algorithms.
+   \item[]\textbf{Chapter 4} presents a literature review on trends in ant colony optimization.
+   \item[]\textbf{Chapter 5} introduces a modified ant-based algorithm.
+   \item[]\textbf{Chapter 6} provides details on how the problem representation and how the ants construct a feasible solution. In addition, the chapter presents a detailed review of the novel ACO algorithm proposed to answer the research questions and specifies the experimental scheme.
+   \item[]\textbf{Chapter 7} presents the results of computational evaluation of the ACO algorithms
+   \item[]\textbf{Chapter 8} discusses the performance of the modified ACO algorithm.
+   \item[]\textbf{Chapter 9} summarizes the findings.
+\end{itemize}
+\end{comment}

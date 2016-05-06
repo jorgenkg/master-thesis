@@ -1,0 +1,78 @@
+\graphicspath{{chapters/chapter5/}}
+
+\chapter{Results}
+Parameters: mmas and $AS_{rank}$ converges slower to prevent early stagnation. FT-ACO can be allowed to converge quickly, since this will only trigger a exploration phase. Remember the parameters was optimized for 24.000 soluitons.
+
+\section{Introduction}
+This chapter will present the results from the experiments outlined in \textbf{reference chap 4 experiments}. The experiments were performed to investigate how the three ant algorithms Max-Min Ant System (MMAS), Fixed-Threshold ACO (FT-ACO), Self-Reinforcement ACO (SR-ACO) perform on minimum cost flow problems (MCFP).
+
+The experiment results are presented using graphs to visualize how stagnation develops under the algorithms. In addition, the statistical justification for the claims expressed in this chapter are substantiated by the data tables listed in \cref{appendix:result_tables,appendix:stagnation_tables}.
+
+The goal of the experiments was to identify whether labor division is a preferable option to using a pheromone limiting function, such as MMAS, to avoid stagnation.
+
+% 
+% end Introduction
+
+
+\section{Solving MCFP with ACO}
+MMAS was first applied to the MCFP domain by \textcite{Monteiro2011}, and has been used as a benchmark to measure the simplicity of stagnation avoidance during the experiments. In addition to cross-validating the labor division schemes, we investigated how the stagnation avoiding algorithms performed in comparison to the Ranked Ant System ($AS_{rank}$) formulated by \textcite{Bullnheimer1997}. $AS_{rank}$ was chosen because the algorithm both produce good solutions and struggle with stagnation.
+
+The results from the experiment indicate that all of the stagnation avoidance schemes offered an improvement over $AS_{rank}$. It further proved that Fixed-Threshold ACO performed positively better than MMAS, SR-ACO and $AS_{rank}$. The Self-Reinforcement ACO and Max-Min Ant System produced solutions of the same standard. The results produced by $AS_{rank}$ indicate that ant algorithms would struggle with stagnation on about $50\%$ of the graphs in the test set.
+
+The entirety of the results generated in the experiments are offered in \cref{appendix:result_tables,appendix:stagnation_tables}, while relevant excerpts for the discussion below are listed in \cref{tbl:results_table_excerpt_monteiro,tbl:results_table_excerpt_smallworld}.
+
+\input{chapters/chapter5/excerpt_of_results_table_monteiro}
+\input{chapters/chapter5/excerpt_of_results_table_smallworld}
+
+% 
+% end Solving MCFP with ACO
+
+
+\subsection{Solving MCFP with Max-Min Ant System}
+MMAS proved to be less proned to stagnation than $AS_{rank}$, at the cost of having a slower convergence. The mathematics behind the pheromone limitation in MMAS implies that the lower bound $\tau_{min}$ on the pheromone strength is directly proportional to the upper bound $\tau_{max}$. The ratio between $\tau_{min}$ and $\tau_{max}$ governs the stagnation avoidance. In order to prevent stagnation the ratio must not be to great, else the edges with $\tau_{min}$ pheromone would be impossible to randomly select. On the other hand, if the ratio is too small the search would stagnate. 
+
+\input{chapters/chapter5/figure_mmas_stagnation}
+
+Hvordan fungerer max min ant system på mcfp? (dette er benchmarken vår). Se litt på tabellene og pek til gode og dårlige resultater. Kan vi si noe om stagnation? Kanskje inkluder en graf som viser at søket faktisk har stagnert.
+
+\subsubsection{Producing a Solution with MaxMin Ant System}
+Show some solutions for graphs along the search process. Eg: 50, 100, 150, 200 iteration. Discuss how the average and a good run progresses. Show a run with poor results. Do not discuss / show "duplicate" runs!! 
+
+Dårlig på CCNFP17g2c, CCNFP17g4a, CCNFP17g6c, CCNFP50g1c, CCNFP50g2b, CCNFP50g3a
+
+God på: CCNFP25, CCNFP17g1a, CCNFP12g6b
+
+% 
+% end Solving MCFP with Max-Min Ant System
+
+
+\subsection{Solving MCFP with Fixed-Threshold ACO}
+Hvordan fungerer Fixed-Threshold på mcfp? Se litt på tabellene og pek til gode og dårlige resultater. Kan vi si noe om stagnation? Kanskje inkluder en graf som viser at søket faktisk har stagnert.
+
+\subsubsection{Producing a Solution with Fixed-Threshold ACO}
+Show some solutions for graphs along the search process. Eg: 50, 100, 150, 200 iteration. Discuss how the average and a good run progresses. Show a run with poor results. Do not discuss / show "duplicate" runs!!
+
+God på: CCNFP12g1b, CCNFP12g6a, CCNFP15g1a, CCNFP17g1b, CCNFP17g6c, CCNFP17g6c, PowerClusterGraphN100g1b, Thresh er overlegen i Small world grafer. 
+
+Dårlig på: CCNFP15g1c, CCNFP10g6a, CCNFP10g5a
+
+\subsubsection{Comparing Fixed-Threshold ACO to Max-Min Ant System}
+Vis til likheter og forskjeller. Hvorfor ser søkegrafene ulike ut selv om den grunnleggende algoritme-ideen er den samme? Referer til analysekapittelet for mer informasjon om hvorfor T-ACO kan konvergere kjappere i starten og fortsatt finne bedre løsninger enn MMAS (samt hvorfor det lønner seg).
+
+
+
+\subsection{Solving MCFP with Self-Reinforcement ACO}
+Hvordan fungerer Self-Reinforcement på mcfp? Se litt på tabellene og pek til gode og dårlige resultater. Kan vi si noe om stagnation? Kanskje inkluder en graf som viser at søket faktisk har stagnert.
+
+\subsubsection{Producing a Solution with Self-Reinforcement ACO}
+Show some solutions for graphs along the search process. Eg: 50, 100, 150, 200 iteration. Discuss how the average and a good run progresses. Show a run with poor results. Do not discuss / show "duplicate" runs!!
+
+Dårlig på: CCNFP10g1c, CCNFP12g6a, CCNFP17g1b, CCNFP17g6c, CCNFP30g6a, CCNFP30g7c, CCNFP50g1c, CCNFP25g6c, CCNFP25g1b
+
+God på: CCNFP10g5a, CCNFP12g1c, CCNFP12g9a, CCNFP17g10b, CCNFP19g10b
+
+\subsubsection{Comparing Self-Reinforcement ACO to Max-Min Ant System}
+Vis til likheter og forskjeller. Hvorfor ser søkegrafene ulike ut? Hvem er god på hva? SR-ACO konvergerer veldig kjapt til gode løsninger, hvorfor det? Påpek at SR-ACO enten kommer til løsningen raskt, eller veldig tregt.
+
+
+% Vi kan sammenligne alle mot hverandre i Analysekapittelet?

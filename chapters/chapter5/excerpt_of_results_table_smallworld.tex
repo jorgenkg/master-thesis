@@ -1,0 +1,34 @@
+\begin{table}[htbp]
+   \tiny
+   \caption[Excerpt of the experiment results from the Small World Experiment]{Excerpt of the results from the Small World Experiment. The table decipt the average cost of solutions from 100 runs with optimal parameter configuration. The algorithms was allowed to generate at most $24000$ solutions. The columns show the average cost, the standard deviation with respect to the discovered solution cost, and the number of solutions that was generated before reaching the global optimum. A `$-$' in the \emph{Sol} column indicate that the algorithm did not always converge to the global optimum.}\label{tbl:results_table_excerpt_smallworld}
+   \centering
+   
+   \begin{tabular}{lrrrrrrrrr}
+   \toprule
+   
+  \textbf{Graph} & \multicolumn{3}{c}{\textbf{FT\@{-}ACO}} & \multicolumn{3}{c}{\textbf{SR\@{-}ACO}} & \multicolumn{3}{c}{\textbf{MMAS}}\\
+  \cmidrule(lr){2-4}
+  \cmidrule(lr){5-7}
+  \cmidrule(lr){8-10}
+  & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol}\\
+  \cmidrule(lr){2-2}
+  \cmidrule(lr){3-3}
+  \cmidrule(lr){4-4}
+  \cmidrule(lr){5-5}
+  \cmidrule(lr){6-6}
+  \cmidrule(lr){7-7}
+  \cmidrule(lr){8-8}
+  \cmidrule(lr){9-9}
+  \cmidrule(lr){10-10}
+  
+SmallWorldN40g01c & $56182$ & $0$ & $18280$ & $56182$ & $7.8$ & $-$ & \bm{$56182$} & \bm{$0$} & \bm{$14720$}\\
+SmallWorldN50g01c & \bm{$69455$} & \bm{$0$} & \bm{$5840$} & $71023$ & $892.4$ & $-$ & $69459$ & $47.4$ & $-$\\
+SmallWorldN75g01b & \bm{$118109$} & \bm{$0$} & \bm{$9480$} & $120414$ & $1014.5$ & $-$ & $118504$ & $282.1$ & $-$\\[0.7ex]
+SmallWorldN75g01c & \bm{$92247$} & \bm{$0$} & \bm{$2800$} & $94078$ & $1434.7$ & $-$ & $92257$ & $36.5$ & $-$\\
+SmallWorldN100g1b & \bm{$144476$} & \bm{$26.8$} & \bm{$-$} & $148665$ & $1244.1$ & $-$ & $145077$ & $381.8$ & $-$\\
+SmallWorldN100g1c & \bm{$145888$} & \bm{$6.9$} & \bm{$-$} & $148747$ & $1334.8$ & $-$ & $147048$ & $610.4$ & $-$\\[0.7ex]
+SmallWorldN100g2a & \bm{$1442046$} & \bm{$0$} & \bm{$6400$} & $1450270$ & $4610.5$ & $-$ & $1442725$ & $1054.6$ & $-$\\
+SmallWorldN100g2b & \bm{$1051630$} & \bm{$0$} & \bm{$4600$} & $1069747$ & $3942.3$ & $-$ & $1051640$ & $65.5$ & $-$\\
+  \bottomrule
+  \end{tabular}
+\end{table}

@@ -1,0 +1,18 @@
+\begin{figure}[htp] % (here, top of the page, the next page)
+\graphicspath{{chapters/chapter5/images/graphs/}}
+\centering
+
+\begin{subfigure}[t]{0.8\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.4\linewidth, keepaspectratio]{CCNFP30g6c.pdf}
+  \caption{Graph CCNFP30g6c: MMAS is the only stagnation avoiding algorithm that is prevented from reaching the global optima.}\label{fig:mmas_stagnation_fig1}
+\end{subfigure}
+
+\begin{subfigure}[t]{0.8\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.4\linewidth, keepaspectratio]{CCNFP40g1b.pdf}
+  \caption{Graph CCNFP40g1b: The stagnation avoiding algorithms close in on the global optima, but do not always reach it. The best performing algorithm was FT-ACO.}\label{fig:mmas_stagnation_fig2}
+\end{subfigure}
+
+\caption{Two exemplifications where the MMAS algorithm stagnates and is prevented for finding the global optima.}\label{fig:mmas_stagnation}
+\end{figure}

@@ -1,0 +1,43 @@
+\begin{table}[htbp]
+   \tiny
+   \caption[Excerpt of the experiment results from from the graph set created by \textcite{Monteiro2013}]{Excerpt of the results from the graph set created by \textcite{Monteiro2013}. The table decipt the average cost of solutions from 100 runs with optimal parameter configuration. The algorithms was allowed to generate at most $24000$ solutions. The columns show the average cost, the standard deviation with respect to the discovered solution cost, and the number of solutions that was generated before reaching the global optimum. A `$-$' in the \emph{Sol} column indicate that the algorithm did not always converge to the global optimum.}\label{tbl:results_table_excerpt_monteiro}
+   \centering
+   \renewcommand{\arraystretch}{1.2}
+   
+   \begin{tabular}{lrrrrrrrrr}
+   \toprule
+   
+  \textbf{Graph} & \multicolumn{3}{c}{\textbf{FT\@{-}ACO}} & \multicolumn{3}{c}{\textbf{SR\@{-}ACO}} & \multicolumn{3}{c}{\textbf{MMAS}} \\
+  \cmidrule(lr){2-4}
+  \cmidrule(lr){5-7}
+  \cmidrule(lr){8-10}
+  & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol} & \emph{Avg} & \emph{Std} & \emph{Sol}\\
+  \cmidrule(lr){2-2}
+  \cmidrule(lr){3-3}
+  \cmidrule(lr){4-4}
+  \cmidrule(lr){5-5}
+  \cmidrule(lr){6-6}
+  \cmidrule(lr){7-7}
+  \cmidrule(lr){8-8}
+  \cmidrule(lr){9-9}
+  \cmidrule(lr){10-10}
+  
+CCNFP10g01c & \bm{$102080$} & \bm{$0$} & \bm{$1320$} & $102237$ & $898.0$ & $-$ & $102080$ & $0$ & $4320$\\
+CCNFP12g01b & \bm{$224040$} & \bm{$0$} & \bm{$3200$} & $224040$ & $0$ & $21100$ & $224040$ & $0$ & $7240$\\
+CCNFP12g06a & \bm{$396131$} & \bm{$0$} & \bm{$4680$} & $400469$ & $7254.3$ & $-$ & $398714$ & $5950.8$ & $-$\\[0.7ex]
+CCNFP12g06b & $406792$ & $0$ & $20600$ & $406917$ & $549.3$ & $-$ & \bm{$406792$} & \bm{$0$} & \bm{$14760$}\\
+CCNFP15g01a & \bm{$272321$} & \bm{$1319.7$} & \bm{$-$} & $272501$ & $1779.8$ & $-$ & $274072$ & $2780.3$ & $-$\\
+CCNFP15g01c & $259563$ & $1825.7$ & $-$ & \bm{$259242$} & \bm{$0$} & \bm{$12200$} & $259242$ & $0$ & $21480$\\[0.7ex]
+CCNFP15g02a & \bm{$29940$} & \bm{$0$} & \bm{$1480$} & $29998$ & $249.9$ & $-$ & $29940$ & $0$ & $5000$\\
+CCNFP15g06b & \bm{$526417$} & \bm{$0$} & \bm{$5800$} & $526639$ & $423.7$ & $-$ & $526417$ & $0$ & $20240$\\
+CCNFP17g01a & $219659$ & $435.8$ & $-$ & $219952$ & $988.4$ & $-$ & \bm{$219428$} & \bm{$0$} & \bm{$13920$}\\[0.7ex]
+CCNFP17g01b & \bm{$203979$} & \bm{$1.6$} & \bm{$-$} & $210333$ & $8374.5$ & $-$ & $204018$ & $221.3$ & $-$\\
+CCNFP17g02c & \bm{$29081$} & \bm{$0$} & \bm{$1920$} & $29081$ & $0$ & $4500$ & $29081$ & $0$ & $9960$\\
+CCNFP17g06c & \bm{$408075$} & \bm{$0$} & \bm{$4040$} & $415953$ & $3691.3$ & $-$ & $408075$ & $0$ & $16400$\\[0.7ex]
+CCNFP19g01b & \bm{$310741$} & \bm{$0$} & \bm{$1600$} & $318764$ & $2371.6$ & $-$ & $310741$ & $0$ & $6480$\\
+CCNFP25g01b & \bm{$362063$} & \bm{$259.0$} & \bm{$-$} & $368245$ & $6392.1$ & $-$ & $362219$ & $664.1$ & $-$\\
+CCNFP25g06c & $848446$ & $352.3$ & $-$ & $851095$ & $7988.7$ & $-$ & \bm{$848401$} & \bm{$0$} & \bm{$16960$}\\[0.7ex]
+CCNFP30g10c & $27328$ & $0$ & $3000$ & \bm{$27328$} & \bm{$0$} & \bm{$2300$} & $27328$ & $0$ & $12400$\\
+  \bottomrule
+  \end{tabular}
+\end{table}
